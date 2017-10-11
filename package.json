@@ -1,0 +1,40 @@
+{
+  "name": "semantic-release",
+  "version": "0.3.3",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node service.js",
+    "service": "node service.js",
+    "listener": "node listener.js",
+    "check_log": "node version.js",
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^4.4.1",
+    "eslint-config-airbnb-base": "^11.3.1",
+    "eslint-plugin-async-await": "0.0.0",
+    "eslint-plugin-import": "^2.7.0",
+    "nodemon": "^1.11.0",
+    "pre-commit": "^1.2.2"
+  },
+  "precommit": [
+    "lint"
+  ],
+  "dependencies": {
+    "babel-preset-es2017": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "body-parser": "^1.18.2",
+    "clubhouse-lib": "^0.1.7",
+    "cors": "^2.8.4",
+    "debug": "^3.1.0",
+    "expand-tilde": "^2.0.2",
+    "express": "^4.16.1",
+    "octonode": "^0.8.0",
+    "semver-regex": "^1.0.0",
+    "uuid": "^3.1.0"
+  }
+}
